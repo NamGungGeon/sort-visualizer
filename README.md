@@ -1,3 +1,3 @@
 # sort-visualizer
 
-[https://github.com/NamGungGeon/sort-visualizer/deployments/activity_log?environment=github-pages](https://github.com/NamGungGeon/sort-visualizer/deployments/activity_log?environment=github-pages)
+[https://namgunggeon.github.io/sort-visualizer/index.html](https://namgunggeon.github.io/sort-visualizer/index.html)
