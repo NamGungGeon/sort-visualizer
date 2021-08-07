@@ -62,10 +62,10 @@ const startReplayHistory = (
 const bubbleSort = (arr) => {
   const histories = [];
   for (let i = 0; i < arr.length; i++) {
-    for (let j = i + 1; j < arr.length; j++) {
-      histories.push(buildHTML(arr, [i, j]));
-      if (arr[i] > arr[j]) {
-        histories.push(swap(i, j, arr));
+    for (let j = i; j < arr.length; j++) {
+      histories.push(buildHTML(arr, [j, j + 1]));
+      if (arr[j] > arr[j + 1]) {
+        histories.push(swap(j + 1, j, arr));
       }
     }
   }
