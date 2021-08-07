@@ -1,0 +1,190 @@
+<html>
+  <head>
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"
+    />
+    <!-- 부가적인 테마 -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="./sorter.js" defer></script>
+    <title>Sort Visualizer</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="./index.html">Sort Visualizer</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="./index.html">Home</a></li>
+          </ul>
+        </div>
+        <!--/.nav-collapse -->
+      </div>
+    </nav>
+    <div class="container theme-showcase">
+      <div class="jumbotron">
+        <div>
+          <h3>정렬 애니메이션 속도</h3>
+          <h3>
+            <button type="button" class="btn btn-danger" onclick="delay=10;">
+              매우빠름
+            </button>
+            <button type="button" class="btn btn-danger" onclick="delay=50;">
+              빠름
+            </button>
+            <button type="button" class="btn btn-primary" onclick="delay=100;">
+              보통
+            </button>
+            <button type="button" class="btn btn-success" onclick="delay=200;">
+              느림
+            </button>
+            <button type="button" class="btn btn-success" onclick="delay=500;">
+              매우느림
+            </button>
+          </h3>
+        </div>
+        <br />
+        <div>
+          <h3>배열 길이</h3>
+          <h3>
+            <div class="input-group">
+              <input
+                id="arr-length-input"
+                min="2"
+                max="300"
+                value="10"
+                type="number"
+                class="form-control"
+                placeholder="Recipient's username"
+                aria-describedby="basic-addon2"
+              />
+              <span class="input-group-addon" id="basic-addon2"
+                >개에 대해 정렬합니다</span
+              >
+            </div>
+          </h3>
+        </div>
+        <div style="text-align: right">
+          <button type="button" class="btn btn-primary" id="generate-arr">
+            Generate
+          </button>
+        </div>
+      </div>
+      <div>
+        <div class="page-header">
+          <h1>원본 배열</h1>
+          <p>이 배열을 여러가지 방법으로 정렬해봅시다</p>
+        </div>
+        <br />
+        <div class="num-arr" id="generated-arr"></div>
+      </div>
+      <div id="bubble-sort">
+        <div class="page-header">
+          <h3>
+            버블 정렬
+            <button
+              type="button"
+              class="btn btn-primary start-sort"
+              id="start-bubble-sort"
+            >
+              정렬하기
+            </button>
+          </h3>
+        </div>
+        <br />
+        <div class="history"></div>
+      </div>
+      <div id="insertion-sort">
+        <div class="page-header">
+          <h3>
+            삽입 정렬
+            <button
+              type="button"
+              class="btn btn-primary start-sort"
+              id="start-insertion-sort"
+            >
+              정렬하기
+            </button>
+          </h3>
+        </div>
+        <br />
+        <div class="history"></div>
+      </div>
+      <div id="selection-sort">
+        <div class="page-header">
+          <h3>
+            선택 정렬
+            <button
+              type="button"
+              class="btn btn-primary start-sort"
+              id="start-selection-sort"
+            >
+              정렬하기
+            </button>
+          </h3>
+        </div>
+        <br />
+        <div class="history"></div>
+      </div>
+      <div id="merge-sort">
+        <div class="page-header">
+          <h3>
+            병합 정렬
+            <button
+              type="button"
+              class="btn btn-primary start-sort"
+              id="start-merge-sort"
+            >
+              정렬하기
+            </button>
+          </h3>
+        </div>
+        <br />
+        <div class="history"></div>
+      </div>
+      <div id="quick-sort">
+        <div class="page-header">
+          <h3>
+            퀵 정렬
+            <button
+              type="button"
+              class="btn btn-primary start-sort"
+              id="start-quick-sort"
+            >
+              정렬하기
+            </button>
+          </h3>
+        </div>
+        <br />
+        <div class="history"></div>
+      </div>
+      <div id="cocktail-sort">
+        <div class="page-header">
+          <h3>
+            칵테일 정렬
+            <button
+              type="button"
+              class="btn btn-primary start-sort"
+              id="start-cocktail-sort"
+            >
+              정렬하기
+            </button>
+          </h3>
+        </div>
+        <br />
+        <div class="history"></div>
+      </div>
+    </div>
+  </body>
+</html>
