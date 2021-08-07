@@ -1,5 +1,5 @@
 let delay = 50;
-let arrLength = 10;
+let arrLength = 100;
 const arr = [];
 const timers = [];
 const range = (size, startAt = 0) => {
