@@ -1,36 +1,36 @@
 body {
-    padding-top: 70px;
-    padding-bottom: 30px;
+  padding-top: 70px;
+  padding-bottom: 30px;
 }
 
 .theme-dropdown .dropdown-menu {
-    position: static;
-    display: block;
-    margin-bottom: 20px;
+  position: static;
+  display: block;
+  margin-bottom: 20px;
 }
 
 .theme-showcase > p > .btn {
-    margin: 5px 0;
+  margin: 5px 0;
 }
 
 .theme-showcase .navbar .container {
-    width: auto;
+  width: auto;
 }
 
-
-.num-arr{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
+.num-arr {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
 }
-.num-arr> .num{
-    padding: 8px 4px;
-    border: 1px solid #e9e9e9;
-    width: 32px;
-    text-align: center;
+.num-arr > .num {
+  padding: 4px 8px;
+  border: 1px solid #e9e9e9;
+  width: 48px;
+  text-align: center;
 }
-.num-arr> .num.highlight{
-    background-color: gray;
+.num-arr > .num.highlight {
+  background-color: #e9e9e9;
+  font-weight: bold;
 }
